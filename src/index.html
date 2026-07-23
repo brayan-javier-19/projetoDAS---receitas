@@ -1,2 +1,281 @@
-<!-- Página inicial do projeto -->
-<h1>Página Colaborativa de Receitas</h1>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Colaborativa de Receitas</title>
+    <style>
+        /* Estilos Gerais e Variáveis de Cor */
+        :root {
+            --primary-color: #d97706;
+            --bg-color: #fef3c7;
+            --card-bg: #ffffff;
+            --text-color: #1f2937;
+            --border-color: #e5e7eb;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fafaf9;
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Cabeçalho Principal */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        header p {
+            margin-top: 0.5rem;
+            opacity: 0.9;
+        }
+
+        /* Menu de Navegação Rápida */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            background-color: white;
+            color: var(--primary-color);
+            padding: 10px 18px;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: bold;
+            border: 2px solid var(--primary-color);
+            transition: all 0.2s ease;
+        }
+
+        nav a:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        /* Contentor das Receitas */
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        /* Cartão de Cada Receita */
+        .recipe-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            padding: 30px;
+            margin-bottom: 40px;
+            border: 1px solid var(--border-color);
+        }
+
+        .recipe-card h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--bg-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .recipe-section {
+            margin-top: 20px;
+        }
+
+        .recipe-section h3 {
+            color: #b45309;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        /* Listas de Ingredientes e Passos */
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Caixa de Notas */
+        .notes {
+            background-color: var(--bg-color);
+            border-left: 4px solid var(--primary-color);
+            padding: 15px;
+            border-radius: 0 8px 8px 0;
+            margin-top: 25px;
+        }
+
+        .notes h4 {
+            margin: 0 0 5px 0;
+            color: #92400e;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Página Colaborativa de Receitas</h1>
+        <p>As melhores receitas de bolos para qualquer ocasião!</p>
+    </header>
+
+    <div class="container">
+        <!-- Navegação Rápida -->
+        <nav>
+            <a href="#laranja">Bolo de Laranja</a>
+            <a href="#cenoura">Bolo de Cenoura</a>
+            <a href="#chocolate">Bolo de Chocolate</a>
+        </nav>
+
+        <!-- RECEITA 1: BOLO DE LARANJA -->
+        <article class="recipe-card" id="laranja">
+            <h2>🍰 Bolo de Laranja</h2>
+            
+            <div class="recipe-section">
+                <h3>Ingredientes</h3>
+                <ul>
+                    <li>200g de açúcar</li>
+                    <li>4 ovos</li>
+                    <li>100ml de óleo</li>
+                    <li>200ml de sumo de laranja natural</li>
+                    <li>Raspa fina de uma laranja</li>
+                    <li>300g de farinha T55 (sem fermento)</li>
+                    <li>15g de fermento em pó</li>
+                    <li>Manteiga (para untar)</li>
+                    <li>Farinha (para a forma)</li>
+                </ul>
+            </div>
+
+            <div class="recipe-section">
+                <h3>Cobertura</h3>
+                <ul>
+                    <li>Chocolate em pó</li>
+                    <li>Manteiga</li>
+                    <li>Açúcar</li>
+                    <li>Óleo</li>
+                </ul>
+            </div>
+
+            <div class="recipe-section">
+                <h3>Modo de Preparação</h3>
+                <ol>
+                    <li>Juntar os ovos com o açúcar numa tigela e bater até formar um creme volumoso e esbranquiçado.</li>
+                    <li>Adicionar o óleo em fio batendo sempre até envolver bem.</li>
+                    <li>Adicionar o sumo de laranja em fio batendo sempre até envolver bem.</li>
+                    <li>Adicionar as raspas de laranja e bater até envolver.</li>
+                    <li>Peneirar a farinha e o fermento diretamente no batido e bater em velocidade lenta até envolver bem.</li>
+                    <li>Untar uma forma de chaminé de 24 cm com manteiga e passar por farinha.</li>
+                    <li>Verter a massa na forma e cozer no forno pré-aquecido a 180ºC, durante cerca de 35 minutos.</li>
+                    <li>Verificar a cozedura com o teste do palito.</li>
+                    <li>Retirar o bolo do forno, deixar arrefecer um pouco e desenformar. Servir!</li>
+                </ol>
+            </div>
+        </article>
+
+        <!-- RECEITA 2: BOLO DE CENOURA -->
+        <article class="recipe-card" id="cenoura">
+            <h2>🥕 Bolo de Cenoura</h2>
+
+            <div class="recipe-section">
+                <h3>Para o Bolo</h3>
+                <ul>
+                    <li>3 cenouras médias (descascadas e cortadas às rodelas — cerca de 250g)</li>
+                    <li>4 ovos (tamanho M)</li>
+                    <li>1 chávena de óleo vegetal (girassol ou milho, ~240ml)</li>
+                    <li>2 chávenas de açúcar</li>
+                    <li>2 chávenas de farinha de trigo com fermento (peneirada)</li>
+                    <li>1 colher de chá de fermento em pó (opcional)</li>
+                </ul>
+            </div>
+
+            <div class="recipe-section">
+                <h3>Para a Cobertura de Chocolate</h3>
+                <ul>
+                    <li>1 colher de sopa de manteiga</li>
+                    <li>1 chávena de açúcar</li>
+                    <li>1 chávena de chocolate em pó (ou cacau)</li>
+                    <li>3 a 4 colheres de sopa de leite</li>
+                </ul>
+            </div>
+
+            <div class="recipe-section">
+                <h3>Modo de Preparação</h3>
+                <ol>
+                    <li><strong>Preparar o forno e a forma (5 min):</strong> Pré-aquece o forno a 180°C. Unta uma forma (com ou sem buraco) com manteiga e polvilha com farinha.</li>
+                    <li><strong>Triturar os líquidos (3-5 min):</strong> No liquidificador (ou copo alto com varinha mágica), junta as cenouras, os ovos, o óleo e o açúcar. Passa tudo muito bem até obter um creme liso.</li>
+                    <li><strong>Misturar os secos (2 min):</strong> Deita o preparado num recipiente grande. Adiciona a farinha (e o fermento) aos poucos, envolvendo delicadamente com uma vara de arames ou espátula.</li>
+                    <li><strong>Cozer o bolo (35-40 min):</strong> Vaza a massa na forma e leva ao forno durante 35 a 40 minutos. Faz o teste do palito no centro. Deixa arrefecer antes de desenformar.</li>
+                    <li><strong>Fazer a cobertura (5 min):</strong> Num tacho pequeno, junta a manteiga, o açúcar, o chocolate e o leite. Leva a lume brando, mexendo sempre até ferver. Rega o bolo ainda quente!</li>
+                </ol>
+            </div>
+        </article>
+
+        <!-- RECEITA 3: BOLO DE CHOCOLATE -->
+        <article class="recipe-card" id="chocolate">
+            <h2>🍫 Bolo de Chocolate</h2>
+            <p><em>Um bolo de chocolate fofo e húmido, ideal para o lanche ou sobremesa.</em></p>
+
+            <div class="recipe-section">
+                <h3>Ingredientes</h3>
+                <ul>
+                    <li>250g de farinha</li>
+                    <li>250g de açúcar</li>
+                    <li>50g de cacau em pó</li>
+                    <li>1 colher de chá de fermento em pó</li>
+                    <li>3 ovos grandes</li>
+                    <li>200ml de leite</li>
+                    <li>120ml de óleo vegetal</li>
+                    <li>15g de manteiga (para untar a forma)</li>
+                    <li>1 pitada de sal</li>
+                    <li>1 colher de chá de essência de baunilha</li>
+                </ul>
+            </div>
+
+            <div class="recipe-section">
+                <h3>Modo de Preparação</h3>
+                <ol>
+                    <li><strong>Pré-aquecer o forno:</strong> Pré-aquecer o forno a 180°C. Untar uma forma redonda com 15g de manteiga e polvilhar com farinha.</li>
+                    <li><strong>Misturar os secos:</strong> Numa tigela grande, peneirar e misturar 250g de farinha, 50g de cacau em pó, 1 colher de chá de fermento em pó e 1 pitada de sal.</li>
+                    <li><strong>Bater os ovos e o açúcar:</strong> Noutra tigela, bater 3 ovos grandes com 250g de açúcar até obter uma mistura clara e esponjosa.</li>
+                    <li><strong>Juntar os líquidos:</strong> Adicionar 200ml de leite, 120ml de óleo vegetal e 1 colher de chá de essência de baunilha, mexendo bem.</li>
+                    <li><strong>Combinar tudo:</strong> Incorporar os ingredientes secos na mistura líquida aos poucos, mexendo suavemente até obter uma massa homogénea.</li>
+                    <li><strong>Levar ao forno:</strong> Verter a massa na forma e levar ao forno pré-aquecido durante cerca de 35-40 minutos (fazer o teste do palito).</li>
+                    <li><strong>Arrefecer:</strong> Retirar do forno e deixar arrefecer na forma durante 10 minutos antes de desenformar. Deixar arrefecer completamente numa grelha.</li>
+                </ol>
+            </div>
+
+            <div class="notes">
+                <h4>💡 Dica Especial:</h4>
+                <p>Podes cobrir com uma ganache de chocolate (chocolate negro derretido com natas) para um toque ainda mais indulgente. Guarda num recipiente fechado até 3-4 dias.</p>
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <p>Página Colaborativa de Receitas • Desenvolvido com Git & GitHub</p>
+    </footer>
+
+</body>
+</html>

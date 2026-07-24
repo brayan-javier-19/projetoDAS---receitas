@@ -13,6 +13,11 @@
 | Eduardo Valério | edvalerio2005-afk | Receita de bolo de iogurte |
 | Idianete Borges | idianeteborges-ui | Receita de bolo de cenoura |
 
+## Grafico de contributors
+<img width="1200" height="512" alt="Commits over time (1)" src="https://github.com/user-attachments/assets/750e5504-a74f-4319-b961-51ec5409bd46" />
+
+
+
 ## Branches Criadas
 
 O grupo adotou a convenção `feature/` seguida do nome da receita, com uma branch por tarefa, criadas a partir da branch principal. No total foram criadas 7 branches.

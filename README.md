@@ -42,12 +42,12 @@ A navegação entre as receitas é realizada através do menu existente no topo 
 
 A organização dos principais ficheiros do projeto é a seguinte:
 
-   Projeto
-│
-├── index.html
-├── README.md
-├── CONTRIBUTING.md
-│
-└── docs
-    ├── roteiro_de_atividades.pdf
-    └── relatorio.md
+    Projeto
+    │
+    ├── index.html
+    ├── README.md
+    ├── CONTRIBUTING.md
+    │
+    └── docs
+        ├── roteiro_de_atividades.pdf
+        └── relatorio.md

@@ -43,6 +43,8 @@ O grupo procurou escrever mensagens curtas e descritivas, que identificassem a a
 - `adicionar modo de preparação`
 - `Add: receita de bolo de maca e canela`
 - `Update: melhora formatacao da receita de bolo de maca e canela`
+## Imagem com exemplo de commits feitos
+<img width="1312" height="590" alt="Captura de ecrã 2026-07-22 192217" src="https://github.com/user-attachments/assets/6886f82e-6a41-4df9-92df-fade648c0aed" />
 
 O gráfico de contribuições por integrante pode ser consultado no repositório em **Insights > Contributors**.
 
@@ -58,9 +60,14 @@ Foram abertas 7 issues ao longo do projeto, todas concluídas e fechadas.
 
 As issues serviram sobretudo para distribuir tarefas que não pertenciam a nenhuma receita em concreto, como a organização dos ficheiros e a preparação da página HTML principal. Cada uma foi fechada assim que o trabalho correspondente foi integrado na branch principal.
 
+<img width="1552" height="772" alt="image" src="https://github.com/user-attachments/assets/b084e766-e2a8-4de2-ac6a-d39ce8b38737" />
+
+
 ## Pull Requests
 
 Foram abertos 6 Pull Requests ao longo do projeto, todos revistos e integrados na branch principal.
+<img width="1156" height="235" alt="Captura de ecrã 2026-07-22 195443" src="https://github.com/user-attachments/assets/fb82606f-6f2e-4af8-84bb-6259e16a94a0" />
+
 
 | PR | Título | Autor |
 |---|---|---|
